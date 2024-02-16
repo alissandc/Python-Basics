@@ -10,7 +10,7 @@ from pathlib import Path
 outlook = client.Dispatch("Outlook.Application")
 message = outlook.CreateItem(0)
 message.Display()
-message.To = "hoarders2@gmail.com"
+message.To = "hoarders3@gmail.com"
 message.Subject = "Happy Birthday"
 html_body = """
     <div>
