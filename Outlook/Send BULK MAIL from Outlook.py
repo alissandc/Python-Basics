@@ -25,5 +25,6 @@ for chunk in chunks:
         message.To = email
         message.Subject = "Testing_01 Your time entry is past due!"
         message.Body = template.format(name)
+        #change Save to send if you want to send the emails
         message.Save()
     sleep(60)
