@@ -55,7 +55,7 @@ print(len(results))
 # for message in results:
 #     message.delete()
 
-save results to csv
+#save results to csv
 import csv
 with open('search_results.csv', 'w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
