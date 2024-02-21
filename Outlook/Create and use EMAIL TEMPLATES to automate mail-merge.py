@@ -6,11 +6,11 @@ Created on Sat Feb 17 05:38:12 2024
 """
 
 import win32com.client as client
-from pathlib import Path
+#from pathlib import Path
 outlook = client.Dispatch("Outlook.Application")
 message = outlook.CreateItem(0)
 message.Display()
-message.To = "hoarders3@gmail.com"
+message.To = "alissa_lopez542@outlook.com"
 message.Subject = "Happy Birthday"
 html_body = """
     <div>
