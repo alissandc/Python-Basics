@@ -16,14 +16,21 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# def get_url(position, location):
-#     """Generate a url from position and location"""
-#     template = 'https://ph.indeed.com/jobs?q={}&l={}'
-#     url = template.format(position, location)
-#     return url
+def get_url(position, location):
+    """Generate a url from position and location"""
+    template = 'https://ph.indeed.com/jobs?q={}&l={}'
+    url = template.format(position, location)
+    return url
 
-# url = get_url('work from home', 'Quezon City')
+url = get_url('work from home', 'Quezon City')
 
 #Extract raw html
-response = requests.get('https://ph.indeed.com/jobs?q=work+from+home&l=Quezon+City&from=searchOnHP')
-print(response)
+response = requests.get(url)
+print(response.reason)
+#print(response.text)
+# print(response.encoding)
+# print(response.content)
+# print(response.raw)
+# print(response.status_code)
+#print(response.headers)
+# print(response.headers['Content-Type'])
