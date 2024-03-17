@@ -1,3 +1,5 @@
+#The file_date function creates a new file in the current working directory, checks the date that the file was modified, and returns just the date portion of the timestamp in the format of yyyy-mm-dd. 
+
 import os
 import datetime
 
