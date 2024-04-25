@@ -13,7 +13,7 @@ import time
 import datetime
  
 # Path
-path = os.path.abspath('C:\\Users\\acayabyab\\Downloads\\New Text Document.txt')
+path = os.path.abspath('C:\\Users\\Downloads\\New Text Document.txt')
  
 # Get the time of last
 # modification of the specified
