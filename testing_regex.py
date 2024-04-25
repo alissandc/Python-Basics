@@ -7,7 +7,7 @@ Created on Thu Apr 25 22:32:33 2024
 
 import re
 qtrname = r"Q1 2024"
-filename = "Alliance Distributors & Services LLC Q1 2024 company"
+filename = "Alliance Services LLC Q1 2024 company"
 result = re.search(qtrname, filename)
 print(result)
 print(result.start())
