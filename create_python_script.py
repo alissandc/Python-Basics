@@ -7,7 +7,7 @@ Created on Wed Mar 13 03:40:59 2024
 import os
 print(os.getcwd())
 
-path = os.path.abspath('C:\\Users\\acayabyab\\OneDrive - RealPage\\Documents\\Python Scripts')
+path = os.path.abspath('C:\\Users\\Documents\\Python Scripts')
 
 os.chdir(path)
 
