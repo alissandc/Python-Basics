@@ -9,7 +9,7 @@ import os
 import re
 qtrname = r"Q1 2024"
 
-os.chdir('C:\\Users\\acayabyab\\OneDrive - RealPage\\Documents\\OpsMerchant Top 100 quarterly\\company automation\\Result')
+os.chdir('C:\\Users\\Documnets\\folder')
 
 print(os.getcwd())
 
