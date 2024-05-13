@@ -1,4 +1,5 @@
 import re
+#SIMPLE MATCHING:
 result = re.search(r"aza", "plaza")
 print(result)
 #<_sre.SRE_Match object; span=(2, 5), match='aza'>
@@ -10,7 +11,6 @@ print(result)
 result = re.search(r"aza", "maze")
 print(result)
 #None
-
 print(re.search(r"^x", "xenon"))
 #<_sre.SRE_Match object; span=(0, 1), match='x'>
 #------------------------------------------------------------------------------------
@@ -22,6 +22,7 @@ print(re.search(r"p.ng", "sponge"))
 print(re.search(r"p.ng", "Pangaea", re.IGNORECASE))
 #<_sre.SRE_Match object; span=(0, 4), match='Pang'>
 #------------------------------------------------------------------------------------   
+#WILDCARDS AND CHARACTER CLASSES:
 print(re.search(r"[Pp]ython", "Python"))
 #<_sre.SRE_Match object; span=(0, 6), match='Python'>
 #------------------------------------------------------------------------------------
@@ -48,17 +49,27 @@ print(re.search(r"cat|dog", "I like both dogs and cats."))
 print(re.findall(r"cat|dog", "I like both dogs and cats."))
 #['dog', 'cat']
 #------------------------------------------------------------------------------------
+#REPETITION QUALIFIERS:
 print(re.search(r"Py.*n", "Pygmalion"))
+# <_sre.SRE_Match object; span=(0, 9), match='Pygmalion'>
 print(re.search(r"Py.*n", "Python Programming"))
+# <_sre.SRE_Match object; span=(0, 17), match='Python Programmin'>
 print(re.search(r"Py[a-z]*n", "Python Programming"))
+# <_sre.SRE_Match object; span=(0, 6), match='Python'>
 print(re.search(r"Py[a-z]*n", "Pyn"))
+# <_sre.SRE_Match object; span=(0, 3), match='Pyn'>
 #------------------------------------------------------------------------------------
 print(re.search(r"o+l+", "goldfish"))
 print(re.search(r"o+l+", "woolly"))
 print(re.search(r"o+l+", "boil"))
+# <_sre.SRE_Match object; span=(1, 3), match='ol'>
+# <_sre.SRE_Match object; span=(1, 5), match='ooll'>
+# None
 #------------------------------------------------------------------------------------
 print(re.search(r"p?each", "To each their own"))
 print(re.search(r"p?each", "I like peaches"))
+# <_sre.SRE_Match object; span=(3, 7), match='each'>
+# <_sre.SRE_Match object; span=(7, 12), match='peach'>
 #------------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------------
